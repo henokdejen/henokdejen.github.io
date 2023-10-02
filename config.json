@@ -1,0 +1,32 @@
+{  
+   "title":"Coursetune LTI 1.3 Content",
+   "description":"Course LTI 1.3 Tool",
+   "oidc_initiation_url":"http://localhost:8080/lti1.3/oidc_login",
+   "target_link_uri":"http://localhost:8080/lti1.3/launch",
+   "public_jwk_url":"http://localhost:8080/.well-known/jwks.json",
+   "scopes":[
+       "https://purl.imsglobal.org/spec/lti-ags/scope/score",
+       "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem",
+       "https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly",
+       "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly"
+    ],
+   "extensions":[  
+      {
+         "privacy_level": "public",
+         "platform": "canvas.instructure.com",
+         "settings":{
+            "text":"Vocareum LTI 1.3 Content",
+            "placements": [
+                {
+                    "placement": "account_navigation",
+                    "message_type": "LtiResourceLinkRequest"
+                },
+                {
+                    "placement": "link_selection",
+                    "message_type": "LtiResourceLinkRequest"
+                }
+            ]
+         }
+      }
+   ]
+}
